@@ -9,7 +9,7 @@ const initialAuth = null;
 
 const translations = {
   es: {
-    headerTitle: "Mi aplicación SIN Context API",
+    headerTitle: "Mi aplicación SIN Context",
     headerSubtitle: "Mi cabecera",
     headerLight: "Claro",
     headerDark: "Oscuro",
@@ -21,7 +21,7 @@ const translations = {
     footerTitle: "Mi pié de página",
   },
   en: {
-    headerTitle: "My aplication WITHOUT Context API",
+    headerTitle: "My application WITHOUT Context",
     headerSubtitle: "My header",
     headerLight: "Light",
     headerDark: "Dark",
