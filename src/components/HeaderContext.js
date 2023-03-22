@@ -6,9 +6,11 @@ import ThemeContext from "../context/ThemeContext";
 const HeaderContext = () => {
   //We can call the const one by one or use destructuration
   //Then we use "useContext" hook and provide the context that we are using
-  const { theme, handleTheme } = useContext(ThemeContext);
+  const { theme, handleTheme, myPageTheme } = useContext(ThemeContext);
   const { text, handleLanguage } = useContext(LanguageContext);
   const {auth, handleAuth} = useContext(AuthContext);
+
+  //meter div con myPageTheme (operador ternario de temas) a un div
 
   return (
     <header className={theme}>

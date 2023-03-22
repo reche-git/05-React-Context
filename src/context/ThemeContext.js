@@ -11,6 +11,8 @@ const initialTheme = "light";
 ///Logic///
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(initialTheme);
+  
+  const myPageTheme = (theme === "dark") ? "my-page-dark" : "my-page";
 
   const handleTheme = (e) => {
     // console.log(e.target.value);
@@ -21,7 +23,7 @@ const ThemeProvider = ({ children }) => {
     }
   };
 
-  const data = { theme, handleTheme };
+  const data = { theme, handleTheme, myPageTheme };
 
 ///Wrap of components///
   return <ThemeContext.Provider value={data}>{children}</ThemeContext.Provider>;

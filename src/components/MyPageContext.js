@@ -5,13 +5,9 @@ import FooterContext from "./FooterContext";
 import HeaderContext from "./HeaderContext";
 import MainContext from "./MainContext";
 
-
-
 const MyPageContext = () => {
-  
-
   return (
-    <div className="my-page">
+    <>
       {/* The provider created "ThemeProvider" will wrap all the components that will use
           his logic */}
       <ThemeProvider>
@@ -23,7 +19,7 @@ const MyPageContext = () => {
           <FooterContext />
         </LanguageProvider>
       </ThemeProvider>
-    </div>
+    </>
   );
 };
 

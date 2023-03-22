@@ -68,8 +68,10 @@ const MyPage = () => {
     }
   };
 
+  const myPageTheme = (theme === "dark") ? "my-page-dark" : "my-page";
+
   return (
-    <div className="my-page">
+    <div className={myPageTheme}>
       <Header
         theme={theme}
         handleTheme={handleTheme}
