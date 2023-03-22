@@ -11,9 +11,8 @@ const Header = ({
       <h2>{text.headerTitle}</h2>
       <h3>{text.headerSubtitle}</h3>
       <select name="languje" onChange={handleLanguage}>
-        <option value="---">---</option>
-        <option value="en">EN</option>
-        <option value="es">ES</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
       </select>
       <input
         type="radio"

@@ -8,18 +8,15 @@ const HeaderContext = () => {
   //Then we use "useContext" hook and provide the context that we are using
   const { theme, handleTheme } = useContext(ThemeContext);
   const { text, handleLanguage } = useContext(LanguageContext);
-  const {auth, handleAuth} = useContext(AuthContext);
-
-  //meter div con myPageTheme (operador ternario de temas) a un div
+  const { auth, handleAuth } = useContext(AuthContext);
 
   return (
-    <header className={theme}>
+    <header className={theme} style={{}}>
       <h2>{text.headerTitle}</h2>
       <h3>{text.headerSubtitle}</h3>
       <select name="languje" onChange={handleLanguage}>
-        <option value="---">---</option>
-        <option value="en">EN</option>
-        <option value="es">ES</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
       </select>
       <input
         type="radio"
