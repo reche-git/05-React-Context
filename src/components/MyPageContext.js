@@ -1,9 +1,8 @@
 import { AuthProvider } from "../context/AuthContext";
 import { LanguageProvider } from "../context/LanguageContext";
 import { ThemeProvider } from "../context/ThemeContext";
-import FooterContext from "./FooterContext";
-import HeaderContext from "./HeaderContext";
-import MainContext from "./MainContext";
+import { MyPageApp } from "./MyPageApp";
+
 
 const MyPageContext = () => {
   return (
@@ -13,10 +12,8 @@ const MyPageContext = () => {
       <ThemeProvider>
         <LanguageProvider>
           <AuthProvider>
-            <HeaderContext />
-            <MainContext />
+            <MyPageApp />
           </AuthProvider>
-          <FooterContext />
         </LanguageProvider>
       </ThemeProvider>
     </>
