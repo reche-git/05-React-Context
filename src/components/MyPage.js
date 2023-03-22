@@ -11,26 +11,22 @@ const translations = {
   es: {
     headerTitle: "Mi aplicación SIN Context",
     headerSubtitle: "Mi cabecera",
-    headerLight: "Claro",
-    headerDark: "Oscuro",
     buttonLogin: "Iniciar Sesión",
     buttonLogout: "Cerrar Sesión",
     mainWelcome: "Bienvenido Invitado",
     mainHello: "Hola Usuario",
     mainContent: "Mi contenido principal",
-    footerTitle: "Mi pié de página",
+    footerTitle: "Mi pié de página ©",
   },
   en: {
     headerTitle: "My application WITHOUT Context",
     headerSubtitle: "My header",
-    headerLight: "Light",
-    headerDark: "Dark",
     buttonLogin: "Login",
     buttonLogout: "Logout",
     mainWelcome: "Welcome Guest",
     mainHello: "Hello User",
     mainContent: "My main content",
-    footerTitle: "My footer",
+    footerTitle: "My footer ©",
   },
 };
 

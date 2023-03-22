@@ -35,7 +35,7 @@ input[type="reset"] {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem 1rem 0;
   display: inline-block;
-  background-color: #28fcf1;
+  background-color: #35e9e0;
   color: rgb(42, 19, 141);
   font-weight: bold;
   font-size: 1rem;
@@ -49,7 +49,7 @@ input[type="reset"] {
 
 button:hover {
   background: #51fff6;
-  box-shadow: inset 0px 0px 5px #007c76;
+  box-shadow: inset 0px 0px 5px #312efa;
   outline: none;
 }
 
@@ -102,19 +102,19 @@ label {
 .my-page {
   margin: 2rem auto;
   padding: 1rem;
-  width: 70%;
+  width: 750px;
   background: linear-gradient(to right, #0083b0, #00b4db);
   border-radius: 25px;
-  box-shadow: 9px 11px 21px 5px rgba(0,0,0,0.75);
+  box-shadow: 9px 11px 21px 5px rgba(0, 0, 0, 0.75);
 }
 
 .my-page-dark {
   margin: 2rem auto;
   padding: 1rem;
-  width: 70%;
+  width: 750px;
   background: linear-gradient(to right, #003c50, #005264);
   border-radius: 25px;
-  box-shadow: 9px 11px 21px 5px rgba(0,0,0,0.75);
+  box-shadow: 9px 11px 21px 5px rgba(0, 0, 0, 0.75);
 }
 
 select {
@@ -158,4 +158,17 @@ td {
     align-items: start;
     gap: 2rem;
   }
+}
+
+/* My application WITH and WITHOUT Context Styles */
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

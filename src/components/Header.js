@@ -9,28 +9,36 @@ const Header = ({
   return (
     <header className={theme}>
       <h2>{text.headerTitle}</h2>
-      <h3>{text.headerSubtitle}</h3>
-      <select name="languje" onChange={handleLanguage}>
-        <option value="en">English</option>
-        <option value="es">Spanish</option>
-      </select>
-      <input
-        type="radio"
-        name="theme"
-        id="light"
-        value="light"
-        onClick={handleTheme}
-      />
-      <label htmlFor="light">{text.headerLight}</label>
-      <input
-        type="radio"
-        name="theme"
-        id="dark"
-        value="dark"
-        onClick={handleTheme}
-      />
-      <label htmlFor="dark">{text.headerDark}</label>
-      <button onClick={handleAuth}>{auth ? text.buttonLogout : text.buttonLogin}</button>
+      <div className="header-container">
+        <h3>{text.headerSubtitle}:</h3>
+        <select name="languje" onChange={handleLanguage}>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <div>
+          <label htmlFor="light">🌞</label>
+          <input
+            type="radio"
+            name="theme"
+            id="light"
+            value="light"
+            onClick={handleTheme}
+          />
+        </div>
+        <div>
+          <label htmlFor="dark">🌚</label>
+          <input
+            type="radio"
+            name="theme"
+            id="dark"
+            value="dark"
+            onClick={handleTheme}
+          />
+        </div>
+        <button onClick={handleAuth}>
+          {auth ? text.buttonLogout : text.buttonLogin}
+        </button>
+      </div>
     </header>
   );
 };
