@@ -4,6 +4,7 @@ import MyPage from "./components/MyPage";
 import MyPageContext from "./components/MyPageContext";
 import { CrudProvider } from "./context/CrudContext";
 import { useModal } from "./hooks/useModal";
+import ContextExample from "./assets/ContextExample.png";
 
 function App() {
   const [isOpen, openModal, closeModal] = useModal(false);
@@ -11,11 +12,11 @@ function App() {
   return (
     <div>
       <button className="btnModal" onClick={openModal}>
-        <h1>React Context</h1>{" "}
+        <h1>React Context</h1>
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">
-          <h3>React Context is like having multiple sheds...</h3>
+          <h3>React Context</h3>
           <p style={{ textAlign: "center" }}>
             Is a way to manage state globally!
           </p>
@@ -30,24 +31,11 @@ function App() {
             allow us to make use of the logic inside of it thanks to the
             useContext hook, like this:
           </p>
-          <img src="" alt="" />
-          <p style={{ textAlign: "center" }}>
-            <a
-              href="https://github.com/reche-git"
-              rel="noreferrer"
-              target="_blank"
-              style={{ marginRight: "5px" }}
-            >
-              GitHub
-            </a>{" "}
-            <a
-              href="https://www.linkedin.com/in/alan-reche-5b651122a/"
-              rel="noreferrer"
-              target="_blank"
-              style={{ marginLeft: "5px" }}
-            >
-              LinkedIn
-            </a>
+          <img src={ContextExample} alt="CodeExample" />
+          <p>
+            Bellow you have an example of the previous project "Crud Api" with
+            Context, and two examples of a code with and without Context as
+            well!
           </p>
         </div>
       </Modal>

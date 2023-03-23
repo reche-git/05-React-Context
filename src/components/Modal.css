@@ -189,6 +189,10 @@
   );
 }
 
+.ExplinationModal img {
+  width: 500px;
+}
+
 .mouseSvg {
   position: absolute;
   width: 35px;
