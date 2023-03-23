@@ -1,12 +1,56 @@
 import { CrudApi } from "./components/CrudApi";
+import Modal from "./components/Modal";
 import MyPage from "./components/MyPage";
 import MyPageContext from "./components/MyPageContext";
 import { CrudProvider } from "./context/CrudContext";
+import { useModal } from "./hooks/useModal";
 
 function App() {
+  const [isOpen, openModal, closeModal] = useModal(false);
+
   return (
     <div>
-      <h1>React Context</h1>
+      <button className="btnModal" onClick={openModal}>
+        <h1>React Context</h1>{" "}
+      </button>
+      <Modal isOpen={isOpen} closeModal={closeModal}>
+        <div className="ExplinationModal">
+          <h3>React Context is like having multiple sheds...</h3>
+          <p style={{ textAlign: "center" }}>
+            Is a way to manage state globally!
+          </p>
+          <p>
+            It can be used together with the useState Hook to share state
+            between deeply nested components more easily than with useState
+            alone.
+          </p>
+          <p>
+            Instead of cascating props seven times to reach the necessary
+            component, we can wrap the application with a provider tag that
+            allow us to make use of the logic inside of it thanks to the
+            useContext hook, like this:
+          </p>
+          <img src="" alt="" />
+          <p style={{ textAlign: "center" }}>
+            <a
+              href="https://github.com/reche-git"
+              rel="noreferrer"
+              target="_blank"
+              style={{ marginRight: "5px" }}
+            >
+              GitHub
+            </a>{" "}
+            <a
+              href="https://www.linkedin.com/in/alan-reche-5b651122a/"
+              rel="noreferrer"
+              target="_blank"
+              style={{ marginLeft: "5px" }}
+            >
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </Modal>
       <hr />
       <CrudProvider>
         <CrudApi />
