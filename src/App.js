@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
       <button className="btnModal" onClick={openModal}>
-        <h1>React Context</h1>
-        <img src={clickMe} alt="Click-Me" className="clickMeImg" />
+        <h1>React Context{" "}<img src={clickMe} alt="Click-Me" className="clickMeImg" /></h1>
+        
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">

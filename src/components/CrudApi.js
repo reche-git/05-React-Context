@@ -11,6 +11,11 @@ export const CrudApi = () => {
   return (
     <div>
       <h2>
+        <img
+          src={githubIcon}
+          alt="github-icon"
+          style={{ width: "20px", height: "20px", margin: "auto" }}
+        />{" "}
         <a
           href="https://github.com/reche-git/05-React-Context/tree/master/src/components"
           rel="noreferrer"

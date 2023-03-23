@@ -156,8 +156,6 @@
 .clickMeImg {
   position: absolute;
   width: 50px;
-  top: 10%;
-  left: 15.5rem;
-  animation: mouseShaske 0.4s 5;
   animation-delay: 1s;
+  top: 6px;
 }
