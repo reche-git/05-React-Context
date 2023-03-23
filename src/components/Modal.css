@@ -9,53 +9,13 @@
 }
 
 .btnModal:hover {
-  color: #51fff6;
+  transition: .3s ease-in;
   cursor: pointer;
+  color: #00f7ff;
 }
 
-.cursorImg {
-  position: absolute;
-  width: 30px;
-  top: 30px;
-  left: 100%;
-  animation-name: shake;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% {
-    left: 100%;
-  }
-  50% {
-    left: 105%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-.cursorImg2 {
-  position: absolute;
-  width: 30px;
-  top: 30px;
-  right: 100%;
-  transform: rotate(180deg);
-  animation-name: shake2;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake2 {
-  0% {
-    right: 100%;
-  }
-  50% {
-    right: 105%;
-  }
-  100% {
-    right: 100%;
-  }
+.btnModal:hover .clickMeImg {
+  display: none;
 }
 
 .modal {
@@ -193,23 +153,11 @@
   width: 500px;
 }
 
-.mouseSvg {
+.clickMeImg {
   position: absolute;
-  width: 35px;
-  top: 60%;
-  left: 1.5rem;
+  width: 50px;
+  top: 10%;
+  left: 15.5rem;
   animation: mouseShaske 0.4s 5;
   animation-delay: 1s;
-}
-
-@keyframes mouseShaske {
-  0% {
-    transform: translateY(2px);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-  100% {
-    transform: translateY(2px);
-  }
 }

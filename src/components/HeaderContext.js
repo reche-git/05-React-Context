@@ -40,7 +40,7 @@ const HeaderContext = () => {
           />
         </div>
 
-        <button onClick={handleAuth}>
+        <button onClick={handleAuth} className="buttonPage">
           {auth ? text.buttonLogout : text.buttonLogin}
         </button>
       </div>

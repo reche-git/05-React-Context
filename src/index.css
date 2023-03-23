@@ -27,7 +27,7 @@ body {
   color: white;
 }
 
-button,
+.buttonPage,
 input[type="submit"],
 input[type="reset"] {
   border: 2px solid rgb(42, 19, 141);
@@ -47,7 +47,7 @@ input[type="reset"] {
   cursor: pointer;
 }
 
-button:hover {
+.buttonPage:hover {
   background: #51fff6;
   box-shadow: inset 0px 0px 5px #312efa;
   outline: none;
