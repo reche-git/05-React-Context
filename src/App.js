@@ -39,6 +39,15 @@ function App() {
             Context, and two examples of a code with and without Context as
             well!
           </p>
+          <p style={{textAlign:"center"}}>
+            <a
+              href="https://github.com/reche-git/05-React-Context"
+              rel="noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </p>
         </div>
       </Modal>
       <hr />

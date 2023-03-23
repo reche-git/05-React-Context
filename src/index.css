@@ -21,6 +21,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .dark {
   /* background: linear-gradient(to right, #003c50, #007e9b); */
   /* filter: invert(1); */
