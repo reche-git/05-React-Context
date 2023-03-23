@@ -7,13 +7,6 @@ function App() {
   return (
     <div>
       <h1>React Context</h1>
-      <a
-        href="https://es.reactjs.org/docs/context.html"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Documentation
-      </a>
       <hr />
       <CrudProvider>
         <CrudApi />

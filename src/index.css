@@ -167,6 +167,10 @@ td {
   justify-content: space-evenly;
 }
 
+.header-container button {
+  width: 150px;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;

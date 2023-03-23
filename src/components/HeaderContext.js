@@ -13,30 +13,37 @@ const HeaderContext = () => {
   return (
     <header className={theme} style={{}}>
       <h2>{text.headerTitle}</h2>
-      <h3>{text.headerSubtitle}</h3>
-      <select name="languje" onChange={handleLanguage}>
-        <option value="en">English</option>
-        <option value="es">Spanish</option>
-      </select>
-      <input
-        type="radio"
-        name="theme"
-        id="light-context"
-        value="light"
-        onClick={handleTheme}
-      />
-      <label htmlFor="light-context">{text.headerLight}</label>
-      <input
-        type="radio"
-        name="theme"
-        id="dark-context"
-        value="dark"
-        onClick={handleTheme}
-      />
-      <label htmlFor="dark-context">{text.headerDark}</label>
-      <button onClick={handleAuth}>
-        {auth ? text.buttonLogout : text.buttonLogin}
-      </button>
+      <div className="header-container">
+        <h3>{text.headerSubtitle}</h3>
+        <select name="languje" onChange={handleLanguage}>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <div>
+          <label htmlFor="light-context">🌞</label>
+          <input
+            type="radio"
+            name="theme"
+            id="light-context"
+            value="light"
+            onClick={handleTheme}
+          />
+        </div>
+        <div>
+          <label htmlFor="dark-context">🌚</label>
+          <input
+            type="radio"
+            name="theme"
+            id="dark-context"
+            value="dark"
+            onClick={handleTheme}
+          />
+        </div>
+
+        <button onClick={handleAuth}>
+          {auth ? text.buttonLogout : text.buttonLogin}
+        </button>
+      </div>
     </header>
   );
 };

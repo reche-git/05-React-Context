@@ -8,7 +8,7 @@ const FooterContext = () => {
 
   return (
     <footer className={theme}>
-      <h4>{text.footerTitle}</h4>
+      <h4 style={{marginLeft: "78%"}}>{text.footerTitle}</h4>
     </footer>
   );
 };
