@@ -5,6 +5,7 @@ import ThemeContext from "../context/ThemeContext";
 import { useModal } from "../hooks/useModal";
 import Modal from "./Modal";
 import clickMe from "../assets/clickMe.png";
+import providerImg from "../assets/providerImg.png"
 
 const HeaderContext = () => {
   //We can call the const one by one or use destructuration
@@ -16,7 +17,7 @@ const HeaderContext = () => {
   const [isOpen, openModal, closeModal] = useModal(false);
 
   return (
-    <header className={theme} style={{}}>
+    <header className={theme}>
       <button className="btnModal" onClick={openModal}>
         <h2>
           {text.headerTitle}{" "}
@@ -25,38 +26,26 @@ const HeaderContext = () => {
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">
-          <h3>A Dummy Page without context</h3>
+          <h3>A Dummy Page with context</h3>
           <p style={{ textAlign: "center" }}>
-            All the logic is dumped in the{" "}
+            All the logic is stored in the{" "}
             <a
-              href="https://github.com/reche-git/05-React-Context/blob/master/src/components/MyPage.js"
+              href="https://github.com/reche-git/05-React-Context/tree/master/src/context"
               rel="noreferrer"
               target="_blank"
             >
-              MyPage
+              Context
             </a>{" "}
-            component.
+            folder.
           </p>
-          <p>Why is this a bad idea?</p>
+          <p>Why is this a good idea?</p>
           <p>
-            Imagine a project with an intricate tree of components, at one point
-            you will need to use state that was defined in a non-related
-            component; in this case you would be forced to rewrite the code to
-            use the same state that you ones wrote.
+            Every Context object comes with a Provider React component that
+            allows consuming components to subscribe to context changes. This
+            component can be used to wrap context consuming components, just like JSX tags!
           </p>
-          <p>
-            Another thing would be passing too many props between components
-            which makes the code too verbose and difficult to read. Check the{" "}
-            <a
-              href="https://github.com/reche-git/05-React-Context/blob/master/src/components/MyPage.js"
-              rel="noreferrer"
-              target="_blank"
-            >
-              MyPage
-            </a>{" "}
-            component and see how copious amounts of time I had to destructure
-            the same props in all three child components.
-          </p>
+          <img src={providerImg} alt="Provider-img" />
+          <p>If it's inside the provider, it can use the logic with the hook useContext!</p>
         </div>
       </Modal>
       <div className="header-container">
