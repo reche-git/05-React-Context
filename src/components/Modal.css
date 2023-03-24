@@ -159,3 +159,9 @@
   animation-delay: 1s;
   top: 6px;
 }
+
+.LogoImg {
+  width: 70px;
+  padding: .5rem;
+  border-radius: 15px;
+}
