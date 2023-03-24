@@ -6,7 +6,7 @@ const initialLanguage = "en";
 
 const translations = {
   es: {
-    headerTitle: "Mi aplicación SIN Context",
+    headerTitle: "Mi aplicación CON Context",
     headerSubtitle: "Mi cabecera",
     buttonLogin: "Iniciar Sesión",
     buttonLogout: "Cerrar Sesión",
@@ -16,7 +16,7 @@ const translations = {
     footerTitle: "Mi pié de página ©",
   },
   en: {
-    headerTitle: "My application WITHOUT Context",
+    headerTitle: "My application WITH Context",
     headerSubtitle: "My header",
     buttonLogin: "Login",
     buttonLogout: "Logout",

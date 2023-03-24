@@ -33,9 +33,26 @@ const Header = ({
             </a>{" "}
             component.
           </p>
-          <p>...</p>
-          <p>...</p>
-          <p>...</p>
+          <p>Why is this a bad idea?</p>
+          <p>
+            Imagine a project with an intricate tree of components, at one point
+            you will need to use state that was defined in a non-related
+            component; in this case you would be forced to rewrite the code to use
+            the same state that you ones wrote.
+          </p>
+          <p>
+            Another thing would be passing too many props between components
+            which makes the code too verbose and difficult to read. Check the{" "}
+            <a
+              href="https://github.com/reche-git/05-React-Context/blob/master/src/components/MyPage.js"
+              rel="noreferrer"
+              target="_blank"
+            >
+              MyPage
+            </a>{" "}
+            component and see how copious amounts of time I had to destructure
+            the same props in all three child components.
+          </p>
         </div>
       </Modal>
 
