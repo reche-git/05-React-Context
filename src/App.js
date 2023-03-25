@@ -12,15 +12,18 @@ function App() {
 
   return (
     <div>
+      {/* Modal */}
       <button className="btnModal" onClick={openModal}>
-        <h1>React Context{" "}<img src={clickMe} alt="Click-Me" className="clickMeImg" /></h1>
-        
+        <h1>
+          React Context{" "}
+          <img src={clickMe} alt="Click-Me" className="clickMeImg" />
+        </h1>
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">
           <h3>React Context</h3>
           <p style={{ textAlign: "center" }}>
-            Is a way to manage state globally!
+            It's a way to manage state globally!
           </p>
           <p>
             It can be used together with the useState Hook to share state
@@ -28,7 +31,7 @@ function App() {
             alone.
           </p>
           <p>
-            Instead of cascading props seven times to reach the necessary
+            Instead of cascading props multiple times to reach the necessary
             component, we can wrap the application with a provider tag that
             allows us to make use of the logic inside of it thanks to the
             useContext hook, like this:
@@ -39,7 +42,7 @@ function App() {
             Context, and two examples of a code with and without Context as
             well!
           </p>
-          <p style={{textAlign:"center"}}>
+          <p style={{ textAlign: "center" }}>
             <a
               href="https://github.com/reche-git/05-React-Context"
               rel="noreferrer"
@@ -50,6 +53,8 @@ function App() {
           </p>
         </div>
       </Modal>
+      {/* Modal */}
+
       <hr />
       <CrudProvider>
         <CrudApi />

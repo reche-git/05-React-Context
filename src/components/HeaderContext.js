@@ -5,7 +5,7 @@ import ThemeContext from "../context/ThemeContext";
 import { useModal } from "../hooks/useModal";
 import Modal from "./Modal";
 import clickMe from "../assets/clickMe.png";
-import providerImg from "../assets/providerImg.png"
+import providerImg from "../assets/providerImg.png";
 
 const HeaderContext = () => {
   //We can call the const one by one or use destructuration
@@ -18,8 +18,9 @@ const HeaderContext = () => {
 
   return (
     <header className={theme}>
+      {/* Modal */}
       <button className="btnModal" onClick={openModal}>
-        <h2>
+        <h2 className={theme}>
           {text.headerTitle}{" "}
           <img src={clickMe} alt="Click-Me" className="clickMeImg" />
         </h2>
@@ -42,12 +43,17 @@ const HeaderContext = () => {
           <p>
             Every Context object comes with a Provider React component that
             allows consuming components to subscribe to context changes. This
-            component can be used to wrap context consuming components, just like JSX tags!
+            component can be used to wrap context consuming components, just
+            like JSX tags!
           </p>
           <img src={providerImg} alt="Provider-img" />
-          <p>If it's inside the provider, it can use the logic with the hook useContext!</p>
+          <p>
+            If it's inside the provider, it can use the logic with the hook
+            useContext!
+          </p>
         </div>
       </Modal>
+      {/* Modal */}
       <div className="header-container">
         <h3>{text.headerSubtitle}</h3>
         <select name="languje" onChange={handleLanguage}>

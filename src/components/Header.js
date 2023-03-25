@@ -13,8 +13,9 @@ const Header = ({
   const [isOpen, openModal, closeModal] = useModal(false);
   return (
     <header className={theme}>
+      {/* Modal */}
       <button className="btnModal" onClick={openModal}>
-        <h2>
+        <h2 className={theme}>
           {text.headerTitle}{" "}
           <img src={clickMe} alt="Click-Me" className="clickMeImg" />
         </h2>
@@ -37,8 +38,8 @@ const Header = ({
           <p>
             Imagine a project with an intricate tree of components, at one point
             you will need to use state that was defined in a non-related
-            component; in this case you would be forced to rewrite the code to use
-            the same state that you ones wrote.
+            component; in this case you would be forced to rewrite the code to
+            use the same state that you ones wrote.
           </p>
           <p>
             Another thing would be passing too many props between components
@@ -55,7 +56,8 @@ const Header = ({
           </p>
         </div>
       </Modal>
-
+      {/* Modal */}
+      
       <div className="header-container">
         <h3>{text.headerSubtitle}:</h3>
         <select name="languje" onChange={handleLanguage}>
